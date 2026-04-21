@@ -1,0 +1,679 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<!-- Mirrored from blueirispartners.com/who-we-help.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Mar 2024 09:39:37 GMT -->
+
+<head>
+    <title>BLUE IRIS PARTNERS - Who We Help</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="ThemeZaa">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="description"
+        content="Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 48+ ready demos.">
+
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+    <link rel="stylesheet" href="css/vendors.min.css" />
+    <link rel="stylesheet" href="css/icon.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/responsive.min.css" />
+    <link rel="stylesheet" href="demos/finance/finance.css" />
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <style>
+        /* Custom Logo Styling */
+        .navbar.navbar-expand-lg {
+            min-height: 80px !important;
+            display: flex !important;
+            align-items: center !important;
+        }
+
+        .navbar-brand {
+            padding: 0 !important;
+        }
+
+        .navbar-brand img {
+            max-height: 100px !important;
+            height: auto !important;
+            width: auto !important;
+            background: rgba(255, 255, 255, 0.8) !important;
+            padding: 10px !important;
+            border-radius: 8px !important;
+            mix-blend-mode: normal;
+        }
+
+        .footer-logo img {
+            max-height: 80px !important;
+            height: auto !important;
+            width: auto !important;
+            background: transparent !important;
+            mix-blend-mode: multiply;
+        }
+
+        /* Image Overlap Design */
+        .bottom-minus-50px {
+            bottom: -50px !important;
+        }
+
+        .end-minus-50px {
+            right: -50px !important;
+        }
+
+        @media (max-width: 1199px) {
+            .lg-bottom-minus-30px {
+                bottom: -30px !important;
+            }
+
+            .lg-end-minus-30px {
+                right: -30px !important;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .navbar-brand img {
+                max-height: 85px !important;
+            }
+
+            .md-position-relative {
+                position: relative !important;
+            }
+
+            .md-bottom-0 {
+                bottom: 0 !important;
+            }
+
+            .md-end-0 {
+                right: 0 !important;
+            }
+
+            .md-mt-30px {
+                margin-top: 30px !important;
+            }
+
+            .navbar-toggler {
+                display: inline-block !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+                z-index: 99999 !important;
+                position: relative !important;
+                border: none !important;
+                padding: 8px !important;
+                cursor: pointer !important;
+            }
+
+            .navbar-toggler-line {
+                background-color: #1C3D5A !important;
+                height: 2px !important;
+                width: 24px;
+                display: block !important;
+                margin: 5px 0 !important;
+            }
+
+            /* Close button (X) in full screen menu */
+            .navbar-full-screen-menu-inner .navbar-toggler-clone {
+                display: block !important;
+                visibility: visible !important;
+                position: absolute !important;
+                top: 25px !important;
+                right: 25px !important;
+                z-index: 100000 !important;
+                cursor: pointer !important;
+                border: none !important;
+                background: transparent !important;
+            }
+
+            /* X animation for close button */
+            .navbar-collapse-show .navbar-full-screen-menu-inner .navbar-toggler-line:nth-child(1),
+            .navbar-collapse-show .navbar-full-screen-menu-inner .navbar-toggler-line:nth-child(4) {
+                width: 0 !important;
+                opacity: 0 !important;
+            }
+
+            .navbar-collapse-show .navbar-full-screen-menu-inner .navbar-toggler-line:nth-child(2) {
+                transform: rotate(45deg) !important;
+            }
+
+            .navbar-collapse-show .navbar-full-screen-menu-inner .navbar-toggler-line:nth-child(3) {
+                transform: rotate(-45deg) !important;
+            }
+
+            /* Ensure nav items visible in full screen menu */
+            .navbar-full-screen-menu-inner .navbar-collapse-clone {
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+            }
+
+            .navbar-full-screen-menu-inner .navbar-nav {
+                text-align: center !important;
+            }
+
+            .navbar-full-screen-menu-inner .navbar-nav .nav-item {
+                display: block !important;
+            }
+
+            .navbar-full-screen-menu-inner .navbar-nav .nav-link {
+                display: inline-block !important;
+            }
+
+            .navbar-full-screen-menu-inner {
+                background-color: #bc8947 !important;
+                background-image: none !important;
+                z-index: 99999 !important;
+            }
+
+            .navbar-full-screen-menu-inner .navbar-toggler-line {
+                background-color: #fff !important;
+            }
+
+            .navbar-full-screen-menu-inner .navbar-nav .nav-link {
+                color: #fff !important;
+                font-size: 22px !important;
+            }
+
+            .navbar-full-screen-menu-inner .navbar-nav .nav-link:hover {
+                color: #1C3D5A !important;
+            }
+
+            /* Fix active link invisible on gold background in mobile menu */
+            .navbar-full-screen-menu-inner .navbar-nav .nav-link.active,
+            .navbar-full-screen-menu-inner .navbar-nav .nav-item .nav-link.active,
+            .navbar-full-screen-menu-inner .navbar-nav .nav-item a.nav-link.active,
+            .navbar-full-screen-menu-inner .navbar-nav.alt-font .nav-link.active,
+            .navbar-full-screen-menu-inner .navbar-nav.alt-font .nav-item .nav-link.active {
+                color: #fff !important;
+                opacity: 1 !important;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .navbar-brand img {
+                max-height: 75px !important;
+            }
+        }
+
+        @media (max-width: 375px) {
+            .navbar-brand img {
+                max-height: 70px !important;
+            }
+        }
+
+        /* Hide the theme demos sidebar */
+        .theme-demos {
+            display: none !important;
+        }
+
+        /* Make Book a consultation button smaller */
+        .header-button .btn-very-small {
+            font-size: 11px !important;
+            padding: 8px 15px !important;
+        }
+
+        .header-button .btn-very-small i {
+            font-size: 12px !important;
+            margin-right: 5px !important;
+        }
+
+        /* Header White Background */
+        .navbar.navbar-expand-lg {
+            background-color: white !important;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+        }
+
+        /* Custom Header Button Styling */
+        .custom-header-btn {
+            background-color: #1C3D5A !important;
+            color: white !important;
+            padding: 8px 15px !important;
+            font-size: 12px !important;
+            font-weight: 600 !important;
+            border: 2px solid #1C3D5A !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .custom-header-btn:hover {
+            background-color: white !important;
+            color: #1C3D5A !important;
+            border: 2px solid #1C3D5A !important;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(28, 61, 90, 0.3) !important;
+        }
+
+        /* Menu Text Styling */
+        .navbar-nav .nav-link {
+            color: #1C3D5A !important;
+            font-weight: 500 !important;
+        }
+
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-item .nav-link.active,
+        .navbar-nav .nav-item .nav-link:hover {
+            color: #bc8947 !important;
+            opacity: 1 !important;
+        }
+
+        .navbar-nav .nav-link.active::after,
+        .navbar-nav .nav-link:hover::after {
+            background-color: #bc8947 !important;
+        }
+
+        .navbar-nav .nav-item a.nav-link.active,
+        .navbar-nav .nav-item a.nav-link:hover {
+            color: #bc8947 !important;
+            opacity: 1 !important;
+        }
+
+        /* Ultra specific override for active links */
+        nav.navbar .navbar-nav .nav-item .nav-link.active,
+        nav.navbar .navbar-nav .nav-item a.active,
+        .navbar.navbar-expand-lg .navbar-nav .nav-link.active,
+        .navbar.navbar-expand-lg .navbar-nav .nav-item>a.active {
+            color: #bc8947 !important;
+            opacity: 1 !important;
+        }
+
+        /* Ultra specific override for hover links */
+        nav.navbar .navbar-nav .nav-item .nav-link:hover,
+        nav.navbar .navbar-nav .nav-item a:hover,
+        .navbar.navbar-expand-lg .navbar-nav .nav-link:hover,
+        .navbar.navbar-expand-lg .navbar-nav .nav-item>a:hover {
+            color: #bc8947 !important;
+            opacity: 1 !important;
+        }
+
+        /* Override alt-font class */
+        .navbar-nav.alt-font .nav-link.active,
+        .navbar-nav.alt-font .nav-item .nav-link.active,
+        ul.navbar-nav.alt-font li.nav-item a.nav-link.active {
+            color: #bc8947 !important;
+            opacity: 1 !important;
+        }
+
+        .navbar-nav.alt-font .nav-link:hover,
+        .navbar-nav.alt-font .nav-item .nav-link:hover,
+        ul.navbar-nav.alt-font li.nav-item a.nav-link:hover {
+            color: #bc8947 !important;
+            opacity: 1 !important;
+        }
+
+        /* Fix white space above hero on mobile */
+        @media (max-width: 991px) {
+
+            .page-title-parallax-background.ipad-top-space-margin,
+            section.ipad-top-space-margin.page-title-parallax-background {
+                margin-top: 0 !important;
+            }
+        }
+
+        /* Fix X button position - align with hamburger */
+        .navbar-full-screen-menu-inner .navbar-toggler-clone {
+            top: 20px !important;
+            left: 15px !important;
+            right: auto !important;
+        }
+
+        @media (min-width: 576px) {
+            .navbar-full-screen-menu-inner .navbar-toggler-clone {
+                left: 30px !important;
+            }
+        }
+
+        /* iPhone fix - ensure menu works on iOS */
+        .navbar-toggler,
+        .navbar-full-screen-menu-inner .navbar-toggler-clone {
+            -webkit-tap-highlight-color: transparent !important;
+            touch-action: manipulation !important;
+        }
+
+        .navbar-full-screen-menu-inner {
+            -webkit-overflow-scrolling: touch !important;
+            touch-action: pan-y !important;
+        }
+    </style>
+</head>
+
+<body data-mobile-nav-style="full-screen-menu" data-mobile-nav-bg-color="#bc8947" class="custom-cursor">
+
+    <div class="cursor-page-inner">
+        <div class="circle-cursor circle-cursor-inner"></div>
+        <div class="circle-cursor circle-cursor-outer"></div>
+    </div>
+
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-white disable-fixed">
+            <div class="container-fluid">
+                <div class="col-auto col-lg-2 me-lg-0 me-auto">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.png" alt="Blue Iris Partners">
+                    </a>
+                </div>
+                <div class="col-auto col-lg-8 menu-order position-static">
+                    <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav alt-font">
+                            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        </ul>
+                        <li class="nav-item d-block d-sm-none mt-20px"><a href="#"
+                                onclick="return openCalendlyFromMenu('https://calendly.com/ben-hogan-blueirispartners/blue-iris-partners');"
+                                class="btn btn-medium btn-dark-gray btn-box-shadow btn-round-edge text-transform-none w-100">Book
+                                Free Consultation</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-auto col-lg-2 text-end d-none d-sm-flex">
+                    <div class="header-icon">
+                        <div class="header-button"><a href="#"
+                                onclick="return openCalendlyFromMenu('https://calendly.com/ben-hogan-blueirispartners/blue-iris-partners');"
+                                class="btn btn-medium btn-dark-gray btn-box-shadow btn-round-edge text-transform-none custom-header-btn">Book
+                                Free Consultation</a></div>
+                    </div>
+
+                    <div id="contact-form"
+                        class="container p-0 contact-form-style-01 position-relative text-center mfp-hide">
+                        <div class="row g-0">
+                            <div class="col-lg-5 cover-background md-h-600px xs-h-400px"
+                                style="background-image:url('images/demo-finance-form-bg.jpg');"></div>
+                            <div class="col-lg-7">
+                                <div class="p-15 lg-p-10 bg-white">
+                                    <span class="mb-10px">Looking for a finance agent?</span>
+                                    <h3 class="d-inline-block alt-font fw-600 text-dark-gray mb-10 ls-minus-1px">How we
+                                        can help you?</h3>
+                                    <form action="https://blueirispartners.com/email-templates/contact-form.php"
+                                        method="post">
+                                        <div class="position-relative form-group mb-20px">
+                                            <span class="form-icon"><i class="bi bi-emoji-smile"></i></span>
+                                            <input type="text" name="name" class="form-control required"
+                                                placeholder="Enter your name*" />
+                                        </div>
+                                        <div class="position-relative form-group mb-20px">
+                                            <span class="form-icon"><i class="bi bi-envelope"></i></span>
+                                            <input type="email" name="email" class="form-control required"
+                                                placeholder="Enter your email*" />
+                                        </div>
+                                        <div class="position-relative form-group mb-20px">
+                                            <span class="form-icon"><i class="bi bi-telephone-outbound"></i></span>
+                                            <input type="tel" name="phone" class="form-control"
+                                                placeholder="Enter your phone" />
+                                        </div>
+                                        <div class="position-relative form-group form-textarea">
+                                            <span class="form-icon"><i class="bi bi-chat-square-dots"></i></span>
+                                            <textarea placeholder="Your message" name="comment" class="form-control"
+                                                rows="3"></textarea>
+                                            <input type="hidden" name="redirect" value>
+                                            <button
+                                                class="btn btn-medium btn-base-color btn-box-shadow btn-round-edge w-100 mt-20px submit"
+                                                type="submit">Send message</button>
+                                            <div class="form-results mt-20px d-none"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <section class="page-title-parallax-background half-section bg-dark-gray ipad-top-space-margin"
+        data-parallax-background-ratio="0.5" style="background-image: url(images/demo-finance-expertise-bg.jpg)">
+        <div class="opacity-extra-medium bg-gradient-dark-gray-brown"></div>
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 text-center position-relative page-title-extra-large">
+                    <div class="d-flex flex-column small-screen">
+                        <div class="mt-auto"
+                            data-anime="{ &quot;translateY&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 400, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                            <h1 class="text-white alt-font mb-0 text-shadow-extra-large fw-500 ls-minus-2px">Empowering
+                                Business Leaders</h1>
+                        </div>
+
+                        <div class="mt-auto justify-content-center breadcrumb breadcrumb-style-01 alt-font text-white">
+                            <ul
+                                data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateX&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 400, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                                <li><a href="index.html" class="text-white">Home</a></li>
+                                <li>Who We Help</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <div class="row mb-6">
+                <div class="col-lg-6 md-mb-50px pt-4 md-pt-0"
+                    data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                    <h2 class="alt-font fw-600 mb-30px ls-minus-1px fs-40 lg-fs-36 md-fs-32 sm-fs-28"
+                        style="color: #1C3D5A !important;">For business owners who want clarity, profitability, and
+                        growth.</h2>
+                    <p class="w-95 md-w-100 fs-18 lh-30 mb-25px">Blue Iris Partners works with small and medium-sized
+                        business owners typically earning <strong>AED 1.5M – AED 18M</strong> (USD $500k–$5M) in annual
+                        revenue.</p>
+                    <span class="fw-500 text-dark-gray fs-20 mb-15px d-inline-block">Our clients are experts in their
+                        craft — but often face challenges like:</span>
+                    <ul class="list-style-02 ps-0 mb-30px">
+                        <li class="pb-8px"><i
+                                class="feather icon-feather-arrow-right-circle text-base-color icon-small me-10px"></i>The
+                            business depends too heavily on the owner</li>
+                        <li class="pb-8px"><i
+                                class="feather icon-feather-arrow-right-circle text-base-color icon-small me-10px"></i>Growth
+                            is limited by cash constraints</li>
+                        <li class="pb-8px"><i
+                                class="feather icon-feather-arrow-right-circle text-base-color icon-small me-10px"></i>No
+                            clear visibility into what's working (and what isn't)</li>
+                        <li class="pb-8px"><i
+                                class="feather icon-feather-arrow-right-circle text-base-color icon-small me-10px"></i>Stress
+                            about profitability and cash flow</li>
+                        <li class="pb-8px"><i
+                                class="feather icon-feather-arrow-right-circle text-base-color icon-small me-10px"></i>A
+                            desire to scale, but no financial roadmap</li>
+                        <li class="pb-8px"><i
+                                class="feather icon-feather-arrow-right-circle text-base-color icon-small me-10px"></i>Fear
+                            of stagnation — or not providing for family or team</li>
+                    </ul>
+                    <span class="fw-500 text-dark-gray fs-20 mb-8px d-inline-block">If this is you, you're not
+                        alone.</span>
+                    <p class="w-95 md-w-100 fs-17 lh-28 fw-500 text-dark-gray">This is exactly where we help.</p>
+                </div>
+                <div class="col-lg-6 pt-8 md-pt-0">
+                    <div class="position-relative">
+                        <div class="position-relative"
+                            data-anime="{ &quot;translateY&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 100, &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                            <img src="images/demo-finance-expertise-bg.jpg" alt=""
+                                class="w-100 border-radius-6px box-shadow-quadruple-large">
+                        </div>
+                        <div class="position-absolute bottom-minus-50px end-minus-50px lg-bottom-minus-30px lg-end-minus-30px md-position-relative md-bottom-0 md-end-0 md-mt-30px"
+                            style="width: 65%; z-index: 1;"
+                            data-anime="{ &quot;translateY&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 200, &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                            <img src="images/demo-finance-form-bg.jpg" alt=""
+                                class="w-100 border-radius-6px box-shadow-quadruple-large">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section class="bg-very-light-gray">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-2 order-lg-1 pt-8 md-pt-0 md-mb-50px">
+                    <div class="position-relative">
+                        <div class="position-relative"
+                            data-anime="{ &quot;translateY&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 100, &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                            <img src="images/demo-finance-about-01.jpg" alt=""
+                                class="w-100 border-radius-6px box-shadow-quadruple-large">
+                        </div>
+                        <div class="position-absolute bottom-minus-50px start-minus-50px lg-bottom-minus-30px lg-start-minus-30px md-position-relative md-bottom-0 md-start-0 md-mt-30px"
+                            style="width: 60%; z-index: 1; left: -50px;"
+                            data-anime="{ &quot;translateY&quot;: [0, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 200, &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                            <img src="images/demo-finance-about-03.jpg" alt=""
+                                class="w-100 border-radius-6px box-shadow-quadruple-large">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 md-mb-50px pt-4 md-pt-0 pe-lg-0"
+                    data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [30, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 200, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                    <h2 class="alt-font fw-600 mb-15px ls-minus-1px fs-40 lg-fs-36 md-fs-32 sm-fs-28"
+                        style="color: #1C3D5A !important;">WHERE YOU'LL BE</h2>
+                    <span class="fs-18 fw-500 text-base-color mb-30px d-inline-block">(OUTCOMES)</span>
+                    <p class="w-95 md-w-100 fs-18 lh-30 mb-25px fw-500 text-dark-gray">With Blue Iris Partners, you
+                        will:</p>
+                    <ul class="list-style-02 ps-0 mb-30px">
+                        <li class="pb-10px"><i
+                                class="feather icon-feather-check-circle text-base-color icon-small me-10px"></i>Understand
+                            your financial health clearly</li>
+                        <li class="pb-10px"><i
+                                class="feather icon-feather-check-circle text-base-color icon-small me-10px"></i>Know
+                            exactly what drives profit and cash flow</li>
+                        <li class="pb-10px"><i
+                                class="feather icon-feather-check-circle text-base-color icon-small me-10px"></i>See
+                            problems early — and fix them quickly</li>
+                        <li class="pb-10px"><i
+                                class="feather icon-feather-check-circle text-base-color icon-small me-10px"></i>Grow
+                            with confidence</li>
+                        <li class="pb-10px"><i
+                                class="feather icon-feather-check-circle text-base-color icon-small me-10px"></i>Make
+                            smarter decisions faster</li>
+                        <li class="pb-10px"><i
+                                class="feather icon-feather-check-circle text-base-color icon-small me-10px"></i>Feel
+                            supported, not overwhelmed</li>
+                        <li class="pb-10px"><i
+                                class="feather icon-feather-check-circle text-base-color icon-small me-10px"></i>Have
+                            structure, clarity, accountability, and direction</li>
+                    </ul>
+                    <p class="w-95 md-w-100 fs-18 lh-28 fw-600 text-dark-gray">This is financial leadership — built
+                        around your business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-light" style="padding-top: 50px; padding-bottom: 50px; background-color: white;">
+        <div class="container">
+            <div class="row justify-content-center mb-2">
+                <div class="col-12 text-center">
+                    <a href="index.html" class="footer-logo mb-10px d-inline-block"><img src="images/logo.png"
+                            alt="Blue Iris Partners" style="max-height: 100px;"></a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 text-center">
+                    <ul
+                        style="display: flex; justify-content: center; gap: 30px; list-style: none; padding: 0; margin: 0 0 15px 0; flex-wrap: wrap;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <p class="mb-0">&copy; Copyright 2026 <a href="index.html" target="_blank"
+                            class="text-decoration-line-bottom text-dark-gray fw-500">Blue Iris Partners</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/vendors.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        // Helper function to safely open Calendly
+        function openCalendly(url) {
+            if (typeof Calendly !== 'undefined' && Calendly.initPopupWidget) {
+                Calendly.initPopupWidget({ url: url });
+            } else {
+                console.log('Calendly not loaded yet, retrying...');
+                setTimeout(function () {
+                    if (typeof Calendly !== 'undefined') {
+                        Calendly.initPopupWidget({ url: url });
+                    } else {
+                        alert('Booking system is still loading. Please try again in a moment.');
+                    }
+                }, 500);
+            }
+            return false;
+        }
+    </script>
+    <script>
+        // Close mobile menu and open Calendly
+        function openCalendlyFromMenu(url) {
+            // Close the mobile menu
+            var menu = document.querySelector('.navbar-collapse.show');
+            if (menu) {
+                var bsCollapse = bootstrap.Collapse.getInstance(menu);
+                if (!bsCollapse) {
+                    bsCollapse = new bootstrap.Collapse(menu, { toggle: false });
+                }
+                bsCollapse.hide();
+            }
+
+            // Remove navbar-collapse-show class from body
+            document.body.classList.remove('navbar-collapse-show');
+            document.documentElement.classList.remove('overflow-hidden');
+
+            // Wait a bit for menu to close, then open Calendly
+            setTimeout(function () {
+                openCalendly(url);
+            }, 300);
+
+            return false;
+        }
+        // Keep mobile menu open during page navigation
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.navbar-full-screen-menu-inner .nav-link');
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    this.style.opacity = '0.7';
+                    this.innerHTML = this.textContent + ' <span class="spinner-border spinner-border-sm ms-2"></span>';
+                });
+            });
+            setTimeout(function () {
+                const clonedLinks = document.querySelectorAll('.navbar-collapse-clone .nav-link');
+                clonedLinks.forEach(function (link) {
+                    link.addEventListener('click', function (e) {
+                        this.style.opacity = '0.7';
+                        if (!this.querySelector('.spinner-border')) {
+                            this.innerHTML = this.textContent + ' <span class="spinner-border spinner-border-sm ms-2"></span>';
+                        }
+                    });
+                });
+            }, 500);
+        });
+    </script>
+</body>
+
+<!-- Mirrored from blueirispartners.com/who-we-help.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Mar 2024 09:39:39 GMT -->
+
+</html>

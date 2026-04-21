@@ -1,0 +1,158 @@
+<style>
+    /* Menu Text Styling */
+    .navbar-nav .nav-link {
+        color: #000000 !important;
+        font-weight: 500 !important;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-item .nav-link.active,
+    .navbar-nav .nav-item .nav-link:hover {
+        color: #1C3D5A !important;
+        opacity: 1 !important;
+    }
+
+    .navbar-nav .nav-link.active::after,
+    .navbar-nav .nav-link:hover::after {
+        background-color: #1C3D5A !important;
+    }
+
+    .navbar-nav .nav-item a.nav-link.active,
+    .navbar-nav .nav-item a.nav-link:hover {
+        color: #1C3D5A !important;
+        opacity: 1 !important;
+    }
+
+    /* Ultra specific override for active links */
+    nav.navbar .navbar-nav .nav-item .nav-link.active,
+    nav.navbar .navbar-nav .nav-item a.active,
+    .navbar.navbar-expand-lg .navbar-nav .nav-link.active,
+    .navbar.navbar-expand-lg .navbar-nav .nav-item>a.active {
+        color: #1C3D5A !important;
+        opacity: 1 !important;
+    }
+
+    /* Ultra specific override for hover links */
+    nav.navbar .navbar-nav .nav-item .nav-link:hover,
+    nav.navbar .navbar-nav .nav-item a:hover,
+    .navbar.navbar-expand-lg .navbar-nav .nav-link:hover,
+    .navbar.navbar-expand-lg .navbar-nav .nav-item>a:hover {
+        color: #1C3D5A !important;
+        opacity: 1 !important;
+    }
+
+    /* Override alt-font class */
+    .navbar-nav.alt-font .nav-link.active,
+    .navbar-nav.alt-font .nav-item .nav-link.active,
+    ul.navbar-nav.alt-font li.nav-item a.nav-link.active {
+        color: #1C3D5A !important;
+        opacity: 1 !important;
+    }
+
+    .navbar-nav.alt-font .nav-link:hover,
+    .navbar-nav.alt-font .nav-item .nav-link:hover,
+    ul.navbar-nav.alt-font li.nav-item a.nav-link:hover {
+        color: #1C3D5A !important;
+        opacity: 1 !important;
+    }
+</style>
+
+<header>
+
+    <nav class="navbar navbar-expand-lg bg-white disable-fixed"
+        style="background-color: white !important; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <div class="container-fluid">
+            <div class="col-auto col-lg-2 me-lg-0 me-auto">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Blue Iris Partners">
+                </a>
+            </div>
+            <div class="col-auto col-lg-8 menu-order position-static">
+                <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav alt-font">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                        <li class="nav-item dropdown simple-dropdown">
+                            <a href="who-we-help.html" class="nav-link">Expertise</a>
+                            <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink_1"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a href="service-details.html">Finance planning</a></li>
+                                <li><a href="service-details.html">Wealth management</a></li>
+                                <li><a href="service-details.html">Strategic planning</a></li>
+                                <li><a href="service-details.html">Audit assurance</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Team</a></li>
+                        <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+                        <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-auto col-lg-2 text-end d-none d-sm-flex">
+                <div class="header-icon">
+                    <div class="header-button"><a href="#contact-form"
+                            class="btn btn-medium btn-dark-gray btn-box-shadow btn-round-edge text-transform-none popup-with-form custom-header-btn"
+                            style="background-color: black !important; color: white !important; padding: 10px 20px !important; font-size: 14px !important;">Book
+                            Free Consultation</a></div>
+                </div>
+
+                <div id="contact-form"
+                    class="container p-0 contact-form-style-01 position-relative text-center mfp-hide">
+                    <div class="row g-0">
+                        <div class="col-lg-5 cover-background md-h-600px xs-h-400px"
+                            style="background-image:url('images/demo-finance-form-bg.jpg');"></div>
+                        <div class="col-lg-7">
+                            <div class="p-15 lg-p-10 bg-white">
+                                <span class="mb-10px">Looking for a finance agent?</span>
+                                <h3 class="d-inline-block alt-font fw-600 text-dark-gray mb-10 ls-minus-1px">How we can
+                                    help you?</h3>
+                                <form
+                                    action="https://Blue Iris Partnershtml.themezaa.com/email-templates/contact-form.php"
+                                    method="post">
+                                    <div class="position-relative form-group mb-20px">
+                                        <span class="form-icon"><i class="bi bi-emoji-smile"></i></span>
+                                        <input type="text" name="name" class="form-control required"
+                                            placeholder="Enter your name*" />
+                                    </div>
+                                    <div class="position-relative form-group mb-20px">
+                                        <span class="form-icon"><i class="bi bi-envelope"></i></span>
+                                        <input type="email" name="email" class="form-control required"
+                                            placeholder="Enter your email*" />
+                                    </div>
+                                    <div class="position-relative form-group mb-20px">
+                                        <span class="form-icon"><i class="bi bi-telephone-outbound"></i></span>
+                                        <input type="tel" name="phone" class="form-control"
+                                            placeholder="Enter your phone" />
+                                    </div>
+                                    <div class="position-relative form-group form-textarea">
+                                        <span class="form-icon"><i class="bi bi-chat-square-dots"></i></span>
+                                        <textarea placeholder="Your message" name="comment" class="form-control"
+                                            rows="3"></textarea>
+                                        <input type="hidden" name="redirect" value>
+                                        <button
+                                            class="btn btn-medium btn-base-color btn-box-shadow btn-round-edge w-100 mt-20px submit"
+                                            type="submit">Send message</button>
+                                        <div class="form-results mt-20px d-none"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+</header>

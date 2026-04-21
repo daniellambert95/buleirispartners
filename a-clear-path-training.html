@@ -1,0 +1,1064 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <title>Free Live Training - A Clear Path to Increasing Cash Flow & Profit | Blue Iris Partners</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Blue Iris Partners">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="description" content="Free live training session for business owners in the UAE. Learn how to increase cash flow and profitability with practical, easy-to-understand financial insights.">
+
+    <link rel="shortcut icon" href="images/fevicon.png" type="image/png">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/favicon-16x16.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+    <link rel="stylesheet" href="css/vendors.min.css" />
+    <link rel="stylesheet" href="css/icon.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/responsive.min.css" />
+    <link rel="stylesheet" href="demos/finance/finance.css" />
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+    <style>
+        /* Color Scheme */
+        :root {
+            --primary-blue: #1C3D5A;
+            --primary-gold: #bc8947;
+        }
+
+        /* Header */
+        .header-section {
+            background: white;
+            padding: 10px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-logo {
+            display: block;
+            margin: 0 auto;
+            width: fit-content;
+            transition: transform 0.3s ease;
+        }
+
+        .header-logo:hover {
+            transform: scale(1.05);
+        }
+
+        .header-logo img {
+            max-height: 80px;
+            display: block;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: var(--primary-blue);
+            padding: 100px 0 100px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: var(--primary-gold);
+            color: white;
+            padding: 10px 28px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero-title {
+            color: white !important;
+            font-size: 62px;
+            line-height: 1.15;
+            font-weight: 900;
+            margin-bottom: 30px;
+            letter-spacing: -2px;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(135deg, #ffffff 0%, var(--primary-gold) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .hero-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: var(--primary-gold);
+            border-radius: 2px;
+        }
+
+        .hero-subtitle {
+            color: rgba(255, 255, 255, 0.95) !important;
+            font-size: 22px;
+            line-height: 1.7;
+            margin-bottom: 35px;
+            font-weight: 400;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-features {
+            list-style: none;
+            padding: 0;
+            margin: 40px 0 50px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-features li {
+            color: white;
+            font-size: 19px;
+            margin-bottom: 18px;
+            padding: 15px 15px 15px 50px;
+            position: relative;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .hero-features li:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .hero-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 15px;
+            color: var(--primary-gold);
+            font-weight: bold;
+            font-size: 24px;
+            background: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Buttons */
+        .btn-primary-custom {
+            background: var(--primary-gold);
+            color: white;
+            padding: 18px 45px;
+            font-size: 17px;
+            font-weight: 700;
+            border: 2px solid var(--primary-gold);
+            border-radius: 50px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-decoration: none;
+            display: inline-block;
+            margin: 8px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .btn-primary-custom::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255,255,255,0.3);
+            transition: left 0.5s;
+        }
+
+        .btn-primary-custom:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary-custom:hover {
+            background: white;
+            border-color: var(--primary-blue);
+            color: var(--primary-blue);
+            transform: translateY(-5px) scale(1.05);
+        }
+
+        .btn-secondary-custom {
+            background-color: rgba(255, 255, 255, 0.15);
+            color: white;
+            padding: 18px 45px;
+            font-size: 17px;
+            font-weight: 700;
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            border-radius: 50px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-decoration: none;
+            display: inline-block;
+            margin: 8px;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .btn-secondary-custom::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: white;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.5s, height 0.5s;
+        }
+
+        .btn-secondary-custom:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn-secondary-custom:hover {
+            background-color: white;
+            color: var(--primary-blue);
+            border-color: white;
+            transform: translateY(-5px) scale(1.05);
+        }
+
+        .btn-secondary-custom span {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Section Styling */
+        .content-section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .section-bg-light {
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            color: var(--primary-blue);
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 25px;
+            line-height: 1.25;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--primary-gold);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            color: #555;
+            font-size: 19px;
+            line-height: 1.9;
+            margin-bottom: 35px;
+            font-weight: 400;
+        }
+
+        /* Feature Boxes */
+        .feature-box {
+            background: white;
+            padding: 45px 35px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            height: 100%;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+            border: 2px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .feature-box:hover {
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.12);
+            transform: translateY(-5px);
+            border-color: var(--primary-gold);
+        }
+
+        .feature-icon {
+            color: var(--primary-gold);
+            font-size: 48px;
+            margin-bottom: 25px;
+            display: inline-block;
+            background: rgba(188, 137, 71, 0.1);
+            width: 80px;
+            height: 80px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .feature-box:hover .feature-icon {
+            background: var(--primary-gold);
+            color: white;
+        }
+
+        .feature-title {
+            color: var(--primary-blue);
+            font-size: 23px;
+            font-weight: 700;
+            margin-bottom: 18px;
+            line-height: 1.4;
+        }
+
+        .feature-text {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Industries List */
+        .industries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .industry-item {
+            background: white;
+            padding: 25px 30px;
+            border-radius: 10px;
+            font-size: 17px;
+            color: var(--primary-blue);
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+            border: 2px solid transparent;
+            cursor: pointer;
+        }
+
+        .industry-item:hover {
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.12);
+            transform: translateY(-5px);
+            background: var(--primary-blue);
+            color: var(--primary-gold);
+            border-color: var(--primary-blue);
+        }
+
+        /* Speaker Section */
+        .speaker-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .speaker-card:hover {
+            box-shadow: 0 0 60px rgba(0, 0, 0, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .speaker-header {
+            background: var(--primary-blue);
+            padding: 50px 40px;
+            text-align: center;
+            color: white;
+        }
+
+        .speaker-name {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: white !important;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .speaker-title {
+            font-size: 19px;
+            color: var(--primary-gold) !important;
+            margin-bottom: 8px;
+            font-weight: 600;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .speaker-body {
+            padding: 50px 45px;
+            background: white;
+        }
+
+        .speaker-body p {
+            font-size: 17px;
+            line-height: 1.9;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .speaker-body ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .speaker-body ul li {
+            padding-left: 35px;
+            margin-bottom: 15px;
+            position: relative;
+            color: #555;
+            font-size: 16px;
+        }
+
+        .speaker-body ul li::before {
+            content: '⭐';
+            position: absolute;
+            left: 0;
+            font-size: 20px;
+            line-height: 1;
+        }
+
+        /* Format Cards */
+        .format-card {
+            background: white;
+            padding: 40px 35px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            height: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+            border: 2px solid transparent;
+            cursor: pointer;
+        }
+
+        .format-card:hover {
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.12);
+            transform: translateY(-5px);
+            background: var(--primary-blue);
+            border-color: var(--primary-blue);
+        }
+
+        .format-duration {
+            color: var(--primary-gold);
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .format-card:hover .format-duration {
+            color: white;
+        }
+
+        .format-description {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.7;
+            transition: all 0.3s ease;
+        }
+
+        .format-card:hover .format-description {
+            color: var(--primary-gold);
+        }
+
+        /* Benefits Badge */
+        .benefit-badge {
+            display: inline-flex;
+            align-items: center;
+            background: white;
+            padding: 20px 25px;
+            border-radius: 10px;
+            margin: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+            border: 2px solid transparent;
+            cursor: pointer;
+        }
+
+        .benefit-badge:hover {
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.12);
+            transform: translateY(-5px);
+            background: var(--primary-blue);
+            border-color: var(--primary-blue);
+        }
+
+        .benefit-badge i {
+            color: var(--primary-gold);
+            font-size: 28px;
+            margin-right: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .benefit-badge:hover i {
+            color: white;
+        }
+
+        .benefit-text {
+            color: var(--primary-blue);
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.5;
+            transition: all 0.3s ease;
+        }
+
+        .benefit-badge:hover .benefit-text {
+            color: var(--primary-gold);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--primary-blue);
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .cta-title {
+            color: white !important;
+            font-size: 44px;
+            font-weight: 800;
+            margin-bottom: 25px;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            letter-spacing: -1px;
+        }
+
+        .cta-subtitle {
+            color: rgba(255, 255, 255, 0.95) !important;
+            font-size: 20px;
+            margin-bottom: 45px;
+            line-height: 1.7;
+        }
+
+        .cta-contact {
+            color: white;
+            font-size: 22px;
+            margin-top: 35px;
+            padding: 20px 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            display: inline-block;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .cta-contact a {
+            color: var(--primary-gold);
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .cta-contact a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 991px) {
+            .header-logo img {
+                max-height: 70px;
+            }
+
+            .hero-title {
+                font-size: 40px;
+            }
+
+            .section-title {
+                font-size: 34px;
+            }
+
+            .hero-section {
+                padding: 90px 0 90px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .header-logo img {
+                max-height: 60px;
+            }
+
+            .header-section {
+                padding: 15px 0;
+            }
+
+            .hero-section {
+                padding: 80px 0 70px;
+            }
+
+            .hero-title {
+                font-size: 32px;
+                letter-spacing: -1px;
+            }
+
+            .hero-subtitle {
+                font-size: 18px;
+            }
+
+            .hero-features li {
+                font-size: 16px;
+                padding: 12px 12px 12px 45px;
+            }
+
+            .content-section {
+                padding: 70px 0;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .industries-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .btn-primary-custom,
+            .btn-secondary-custom {
+                padding: 15px 30px;
+                font-size: 15px;
+                display: block;
+                width: 90%;
+                margin: 10px auto;
+            }
+
+            .cta-title {
+                font-size: 32px;
+            }
+
+            .feature-box {
+                padding: 35px 25px;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .header-logo img {
+                max-height: 50px;
+            }
+
+            .hero-title {
+                font-size: 26px;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background: white;
+            padding: 60px 0;
+        }
+
+        .footer-logo img {
+            max-height: 100px !important;
+            transition: transform 0.3s ease;
+        }
+
+        .footer-logo img:hover {
+            transform: scale(1.1);
+        }
+
+        footer a {
+            color: var(--primary-blue);
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        footer a:hover {
+            color: var(--primary-gold);
+            transform: translateY(-2px);
+        }
+
+        /* Footer Training Button */
+        footer .btn-base-color:hover {
+            background: var(--primary-blue) !important;
+            border-color: var(--primary-blue) !important;
+            color: white !important;
+            transform: translateY(-3px) !important;
+        }
+
+        /* Scroll Progress */
+        .scroll-progress .scroll-top {
+            background: var(--primary-gold);
+            border-radius: 50px;
+        }
+
+        .scroll-progress .scroll-top:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+
+<body data-mobile-nav-style="classic">
+
+    <!-- Header -->
+    <header class="header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="index.html" class="header-logo">
+                        <img src="images/logo.png" alt="Blue Iris Partners">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-xl-10 col-lg-11">
+                    <div class="hero-badge" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        Free Live Training for Business Owners
+                    </div>
+                    <h1 class="hero-title" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        A Clear Path to Increasing Cash Flow & Profit
+                    </h1>
+                    <p class="hero-subtitle" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        A practical, easy-to-understand session for business owners in the UAE.
+                    </p>
+                    <ul class="hero-features" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 300, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <li>Make increasing Cash Flow and Profitability predictable</li>
+                        <li>Discover the hidden leaks hurting profitability</li>
+                        <li>Understand your numbers — without accounting jargon</li>
+                    </ul>
+                    <div data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 400, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <a href="#" onclick="return openCalendly('https://calendly.com/ben-hogan-blueirispartners/blue-iris-partners');" class="btn-primary-custom">Book This Session</a>
+                        <a href="pdf/The One Clear Path One Pager.pdf" download class="btn-secondary-custom"><span>Download Speaker One-Pager</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What This Session Is About -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h2 class="section-title text-center mb-4" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        What This Session Is About
+                    </h2>
+                    <p class="section-subtitle text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        Running a business is hard enough — understanding the numbers shouldn't make it harder.
+                    </p>
+                    <p class="section-subtitle text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        This session is designed for business owners who want clarity, not confusion. You'll understand what numbers to focus on (which aren't in your accounts), why cash feels tight even when sales are good, and the simple steps every SME can take to build stronger, more predictable financial results.
+                    </p>
+                    <div style="background: #f8f9fa; padding: 30px 40px; border-radius: 10px; margin-top: 40px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 300, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <p class="section-subtitle text-center fw-600" style="color: var(--primary-blue); font-size: 22px; margin-bottom: 0;">
+                            If you've ever felt unsure about where the money goes… this session is for you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You'll Learn -->
+    <section class="content-section section-bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10 text-center">
+                    <h2 class="section-title" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        What You'll Learn
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
+                    <div class="feature-box">
+                        <div class="feature-icon">✓</div>
+                        <h3 class="feature-title">The 16 key financial metrics every business should track</h3>
+                        <p class="feature-text">
+                            These are the metrics that drive the performance of businesses in all industries.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 100, "easing": "easeOutQuad" }'>
+                    <div class="feature-box">
+                        <div class="feature-icon">✓</div>
+                        <h3 class="feature-title">The importance of Cash over Profit and Revenue</h3>
+                        <p class="feature-text">
+                            Why profit is more important than revenue AND why cash is more important than profit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 200, "staggervalue": 100, "easing": "easeOutQuad" }'>
+                    <div class="feature-box">
+                        <div class="feature-icon">✓</div>
+                        <h3 class="feature-title">4 Steps Business Owners Can Use To Grow a Healthier Business</h3>
+                        <p class="feature-text">
+                            Feel confident knowing that you're running your business like a CEO, with the numbers driving your decision making.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 300, "staggervalue": 100, "easing": "easeOutQuad" }'>
+                    <div class="feature-box">
+                        <div class="feature-icon">✓</div>
+                        <h3 class="feature-title">How to build predictable margins</h3>
+                        <p class="feature-text">
+                            So you can plan, grow, and stop worrying about month-end.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-12 mb-4" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 400, "staggervalue": 100, "easing": "easeOutQuad" }'>
+                    <div class="feature-box">
+                        <div class="feature-icon">✓</div>
+                        <h3 class="feature-title">The "Clear Path" method</h3>
+                        <p class="feature-text">
+                            A simple framework to understand, manage, and improve your numbers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who This Session Is Perfect For -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10 text-center">
+                    <h2 class="section-title" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        Who This Session Is Perfect For
+                    </h2>
+                    <p class="section-subtitle" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        This talk is designed specifically for UAE SME owners, including:
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="industries-grid" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 50, "easing": "easeOutQuad" }'>
+                        <div class="industry-item">Short-stay & holiday home operators</div>
+                        <div class="industry-item">Hospitality & F&B</div>
+                        <div class="industry-item">Interior design & fit-out</div>
+                        <div class="industry-item">Construction and Real Estate</div>
+                        <div class="industry-item">Service businesses including Legal Firms</div>
+                        <div class="industry-item">Maintenance & Trades</div>
+                        <div class="industry-item">Marketing, creative & professional services</div>
+                        <div class="industry-item">Retail, fitness, coaching, wellness</div>
+                    </div>
+                    <p class="section-subtitle text-center mt-5" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        If your members or community consist of business owners who want clarity and confidence, they'll get a lot from this session.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Speaker -->
+    <section id="speaker" class="content-section section-bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10 text-center">
+                    <h2 class="section-title" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        About the Speaker
+                    </h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="speaker-card" data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 800, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <div class="speaker-header">
+                            <h3 class="speaker-name">Ben Hogan</h3>
+                            <p class="speaker-title">Founder, Blue Iris Partners | Chartered Accountant (CA)</p>
+                        </div>
+                        <div class="speaker-body">
+                            <p>
+                                Ben has spent 10 years working directly with business owners to improve their profitability, cash flow, and growth. He specialises in helping SMEs cut through the noise, understand their numbers, and make decisions with confidence.
+                            </p>
+                            <p style="font-weight: 600; color: var(--primary-blue); margin-bottom: 15px;">
+                                His approach is simple:
+                            </p>
+                            <div style="background: #f8f9fa; padding: 25px 30px; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);">
+                                <p style="color: var(--primary-blue); font-size: 20px; font-weight: 700; margin-bottom: 0; line-height: 1.6;">
+                                    "No jargon, no complexity — just clear financial insights that business owners can actually use."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Session Formats -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10 text-center">
+                    <h2 class="section-title" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        Session Formats
+                    </h2>
+                    <p class="section-subtitle" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        Choose the format that best fits your group:
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
+                    <div class="format-card">
+                        <div class="format-duration">20-minute keynote</div>
+                        <div class="format-description">Fast, clear, highly practical</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 100, "easing": "easeOutQuad" }'>
+                    <div class="format-card">
+                        <div class="format-duration">45–60 minute workshop</div>
+                        <div class="format-description">Deeper dive, interactive</div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 200, "staggervalue": 100, "easing": "easeOutQuad" }'>
+                    <div class="format-card">
+                        <div class="format-duration">Virtual or in-person</div>
+                        <div class="format-description">Flexible for all group sizes</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="section-subtitle" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 300, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <strong style="color: var(--primary-blue);">Q&A included</strong><br>
+                        This talk works well for networking sessions, meetups, co-working communities, industry groups, and free zone events.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Groups Love This Session -->
+    <section class="content-section section-bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10 text-center">
+                    <h2 class="section-title" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        Why Groups Love This Session
+                    </h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-md-6 mb-3" data-anime='{ "el": "childs", "translateX": [-30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
+                            <div class="benefit-badge">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span class="benefit-text">It's practical — business owners can implement steps immediately</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3" data-anime='{ "el": "childs", "translateX": [30, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 100, "easing": "easeOutQuad" }'>
+                            <div class="benefit-badge">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span class="benefit-text">It's clear — complex concepts explained simply</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3" data-anime='{ "el": "childs", "translateX": [-30, 0], "opacity": [0,1], "duration": 600, "delay": 200, "staggervalue": 100, "easing": "easeOutQuad" }'>
+                            <div class="benefit-badge">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span class="benefit-text">It's interactive — real examples and live questions</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3" data-anime='{ "el": "childs", "translateX": [30, 0], "opacity": [0,1], "duration": 600, "delay": 300, "staggervalue": 100, "easing": "easeOutQuad" }'>
+                            <div class="benefit-badge">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span class="benefit-text">It's aim is to provide value — purely educational and value-focused</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h2 class="cta-title" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        Book the Session
+                    </h2>
+                    <p class="cta-subtitle" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        If you'd like to bring this session to your group, I'd be happy to organise a date.
+                    </p>
+                    <div data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <a href="#" onclick="return openCalendly('https://calendly.com/ben-hogan-blueirispartners/blue-iris-partners');" class="btn-primary-custom">Book This Session</a>
+                        <a href="pdf/The One Clear Path One Pager.pdf" download class="btn-secondary-custom"><span>Download Speaker One-Pager</span></a>
+                    </div>
+                    <div class="cta-contact" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 300, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        📩 <a href="mailto:info@blueirispartners.com">info@blueirispartners.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-light">
+        <div class="container">
+            <div class="row justify-content-center mb-3">
+                <div class="col-12 text-center">
+                    <a href="index.html" class="footer-logo mb-15px d-inline-block">
+                        <img src="images/logo.png" alt="Blue Iris Partners" style="max-height: 100px; filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));">
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 text-center">
+                    <ul style="display: flex; justify-content: center; gap: 35px; list-style: none; padding: 0; margin: 0 0 20px 0; flex-wrap: wrap;">
+                        <li><a href="index.html" style="font-size: 16px;">Home</a></li>
+                        <li><a href="about.html" style="font-size: 16px;">About Us</a></li>
+                        <li><a href="services.html" style="font-size: 16px;">Services</a></li>
+                        <li><a href="contact.html" style="font-size: 16px;">Contact</a></li>
+                    </ul>
+                    <p class="mb-0" style="color: #666; font-size: 15px;">&copy; Copyright 2026 <a href="index.html" target="_blank" class="text-decoration-line-bottom fw-600" style="color: var(--primary-gold);">Blue Iris Partners</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/vendors.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+    <script>
+        // Helper function to safely open Calendly
+        function openCalendly(url) {
+            if (typeof Calendly !== 'undefined' && Calendly.initPopupWidget) {
+                Calendly.initPopupWidget({ url: url });
+            } else {
+                console.log('Calendly not loaded yet, retrying...');
+                setTimeout(function() {
+                    if (typeof Calendly !== 'undefined') {
+                        Calendly.initPopupWidget({ url: url });
+                    } else {
+                        console.error('Calendly failed to load');
+                        window.location.href = url;
+                    }
+                }, 500);
+            }
+            return false;
+        }
+    </script>
+
+</body>
+
+</html>
