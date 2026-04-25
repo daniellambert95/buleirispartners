@@ -427,6 +427,9 @@
             color: white !important;
             transform: translateY(-3px) !important;
         }
+
+        /* Ensure animated elements are always visible (fallback when scroll observer doesn't fire) */
+        [data-anime] { opacity: 1 !important; }
     </style>
 </head>
 
@@ -460,7 +463,19 @@
                         <ul class="navbar-nav alt-font">
                             <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
                             <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-                            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                            <li class="nav-item dropdown simple-dropdown">
+                                <a href="services.html" class="nav-link">Services</a>
+                                <i class="fa-solid fa-angle-down dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                <ul class="dropdown-menu" aria-label="Services submenu">
+                                    <li><a href="services.html#fractional-cfo">Fractional CFO</a></li>
+                                    <li><a href="services.html#bookkeeping">Accounting &amp; Bookkeeping</a></li>
+                                    <li><a href="services.html#reporting">Reporting &amp; Financial Statements</a></li>
+                                    <li><a href="services.html#tax-coordination">Tax Coordination</a></li>
+                                    <li><a href="services.html#audit-preparation">Audit Preparation</a></li>
+                                    <li><a href="services.html#business-sale-advisory">Business Sale &amp; Advisory</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
                             <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                             <li class="nav-item d-block d-sm-none mt-20px"><a href="#"
                                     onclick="return openCalendlyFromMenu('https://calendly.com/ben-hogan-blueirispartners/new-meeting');"
@@ -619,6 +634,28 @@
         </div>
     </section>
 
+
+    <!-- Intro section between hero and industries -->
+    <section class="big-section" style="background-color: #f7f7f7;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-9 col-lg-10 text-center"
+                    data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                    <span class="fs-17 d-inline-block fw-500 text-uppercase ls-1px mb-15px" style="color: #bc8947;">Your Outsourced CFO & Finance Partner</span>
+                    <h2 class="alt-font fw-600 ls-minus-2px mb-25px fs-40 md-fs-34 sm-fs-30" style="color: #1C3D5A !important;">We help ambitious business owners build stronger, more profitable companies through better financial leadership.</h2>
+                    <p class="fs-18 lh-32 w-90 lg-w-100 mx-auto mb-20px">Using a structured monthly approach, we identify what's working, what's not, and where money is being lost — then provide clear direction on what to do next.</p>
+                    <p class="fs-18 lh-32 w-90 lg-w-100 mx-auto mb-20px">From CFO strategy to bookkeeping and reporting, tax coordination, audit readiness, and transaction support, we provide complete finance expertise under one roof.</p>
+                    <p class="fs-19 lh-32 w-85 lg-w-100 mx-auto mb-40px fw-600" style="color: #1C3D5A;">No jargon. No noise. Just clarity, control, and measurable results.</p>
+                    <a href="#"
+                        onclick="return openCalendly('https://calendly.com/ben-hogan-blueirispartners/new-meeting');"
+                        class="btn btn-medium btn-round-edge text-transform-none"
+                        style="background-color: #bc8947; color: white; border: 2px solid #bc8947; padding: 14px 35px; font-weight: 600; font-size: 16px; transition: all 0.3s ease;">
+                        Book a Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="big-section industries-section">
         <style>
@@ -879,6 +916,22 @@
                     </div>
                 </div>
 
+                <!-- E-Commerce -->
+                <div class="col icon-with-text-style-05 transition-inner-all">
+                    <div class="feature-box hover-box dark-hover h-100 last-paragraph-no-margin">
+                        <div class="content-slide-up content-scale p-20 xxl-p-15 xl-p-8 lg-p-10 xs-p-13">
+                            <div class="feature-box-icon">
+                                <i
+                                    class="line-icon-Bag-Items icon-extra-large text-base-color mb-25px justify-content-center"></i>
+                            </div>
+                            <div class="feature-box-content">
+                                <span class="d-inline-block alt-font fs-22 fw-500 mb-5px">E-Commerce</span>
+                            </div>
+                            <div class="feature-box-overlay bg-base-color"></div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -921,6 +974,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                     <p class="mb-0">&copy; Copyright 2026 <a href="index.html" target="_blank"
@@ -934,6 +988,18 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/vendors.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script>
+        function forceAnimeVisible() {
+            document.querySelectorAll('[data-anime]').forEach(function(el) {
+                el.style.setProperty('opacity', '1', 'important');
+                Array.from(el.children).forEach(function(child) {
+                    child.style.setProperty('opacity', '1', 'important');
+                });
+            });
+        }
+        document.addEventListener('DOMContentLoaded', forceAnimeVisible);
+        setTimeout(forceAnimeVisible, 500);
+    </script>
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
     <script type="text/javascript">
         // Helper function to safely open Calendly

@@ -406,6 +406,9 @@
             border-color: #1C3D5A !important;
             transform: translateY(-2px);
         }
+
+        /* Ensure animated elements are always visible (fallback when scroll observer doesn't fire) */
+        [data-anime] { opacity: 1 !important; }
     </style>
 </head>
 
@@ -439,7 +442,19 @@
                         <ul class="navbar-nav alt-font">
                             <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                             <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-                            <li class="nav-item"><a href="services.html" class="nav-link active">Services</a></li>
+                            <li class="nav-item dropdown simple-dropdown">
+                                <a href="services.html" class="nav-link active">Services</a>
+                                <i class="fa-solid fa-angle-down dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                <ul class="dropdown-menu" aria-label="Services submenu">
+                                    <li><a href="services.html#fractional-cfo">Fractional CFO</a></li>
+                                    <li><a href="services.html#bookkeeping">Accounting &amp; Bookkeeping</a></li>
+                                    <li><a href="services.html#reporting">Reporting &amp; Financial Statements</a></li>
+                                    <li><a href="services.html#tax-coordination">Tax Coordination</a></li>
+                                    <li><a href="services.html#audit-preparation">Audit Preparation</a></li>
+                                    <li><a href="services.html#business-sale-advisory">Business Sale &amp; Advisory</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
                             <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                             <li class="nav-item d-block d-sm-none mt-20px"><a href="#"
                                     onclick="return openCalendlyFromMenu('https://calendly.com/ben-hogan-blueirispartners/new-meeting');"
@@ -534,10 +549,34 @@
     </section>
 
 
-    <section class="pt-4">
+    <!-- About Blue Iris Partners intro on services page -->
+    <section class="border-bottom border-color-extra-medium-gray">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-7 col-lg-6 md-mb-9 sm-mb-50px"
+                    data-anime="{ &quot;el&quot;: &quot;childs&quot;, &quot;translateY&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 100, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                    <span class="fs-17 d-inline-block fw-500 text-uppercase ls-1px mb-15px" style="color: #bc8947;">About Blue Iris Partners</span>
+                    <h2 class="alt-font fw-600 ls-minus-1px mb-25px fs-40 lg-fs-36 md-fs-32 sm-fs-28" style="color: #1C3D5A !important;">Practical financial leadership for growing businesses.</h2>
+                    <p class="fs-18 lh-30 mb-20px">Blue Iris Partners provides practical financial leadership for growing businesses.</p>
+                    <p class="fs-18 lh-30 mb-20px">We combine CFO strategy with dependable finance operations — helping business owners understand their numbers, improve performance, and build stronger companies.</p>
+                    <p class="fs-18 lh-30 mb-0">Instead of hiring multiple people, you gain one trusted partner overseeing the financial side of your business.</p>
+                </div>
+                <div class="col-xl-5 col-lg-6 position-relative md-mb-6 sm-mb-50px"
+                    data-anime="{ &quot;opacity&quot;: [0,1], &quot;duration&quot;: 1000, &quot;delay&quot;: 200, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
+                    <div class="overflow-hidden animation-float border-radius-5px">
+                        <img src="images/demo-finance-bg-01.jpg" alt="Blue Iris Partners" class="w-100 border-radius-5px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 1. CFO Services -->
+    <section id="fractional-cfo" class="big-section">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-10 md-mb-50px" style="padding-top: 50px;">
+                <div class="col-lg-10 md-mb-50px">
                     <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px mb-4 fs-40 lg-fs-36 md-fs-32 sm-fs-28">CFO
                         Services</h2>
                     <p class="fs-18 lh-30 mb-4">We provide ongoing CFO support for business owners who want clarity,
@@ -578,33 +617,24 @@
                             <h3 class="alt-font text-dark-gray fw-500 fs-20 mb-3">Our focus:</h3>
                             <ul class="p-0 m-0 list-style-02">
                                 <li class="pb-8px">
-                                    <i
-                                        class="feather icon-feather-arrow-right-circle text-base-color icon-small me-10px"></i>
+                                    <i class="feather icon-feather-arrow-right-circle text-base-color icon-small me-10px"></i>
                                     <span class="fs-18 lh-30"><strong>Revenue</strong> — Growing your top line.</span>
                                 </li>
                                 <li class="pb-8px">
-                                    <i
-                                        class="feather icon-feather-arrow-right-circle text-base-color icon-small me-10px"></i>
-                                    <span class="fs-18 lh-30"><strong>Profit</strong> — Keeping more of what you
-                                        earn.</span>
+                                    <i class="feather icon-feather-arrow-right-circle text-base-color icon-small me-10px"></i>
+                                    <span class="fs-18 lh-30"><strong>Profit</strong> — Keeping more of what you earn.</span>
                                 </li>
                                 <li class="pb-8px">
-                                    <i
-                                        class="feather icon-feather-arrow-right-circle text-base-color icon-small me-10px"></i>
-                                    <span class="fs-18 lh-30"><strong>Cash Flow</strong> — Making sure you always have
-                                        enough.</span>
+                                    <i class="feather icon-feather-arrow-right-circle text-base-color icon-small me-10px"></i>
+                                    <span class="fs-18 lh-30"><strong>Cash Flow</strong> — Making sure you always have enough.</span>
                                 </li>
                                 <li class="pb-8px">
-                                    <i
-                                        class="feather icon-feather-arrow-right-circle text-base-color icon-small me-10px"></i>
-                                    <span class="fs-18 lh-30"><strong>Strength</strong> — Building a resilient
-                                        business.</span>
+                                    <i class="feather icon-feather-arrow-right-circle text-base-color icon-small me-10px"></i>
+                                    <span class="fs-18 lh-30"><strong>Strength</strong> — Building a resilient business.</span>
                                 </li>
                                 <li class="pb-8px">
-                                    <i
-                                        class="feather icon-feather-arrow-right-circle text-base-color icon-small me-10px"></i>
-                                    <span class="fs-18 lh-30"><strong>Stability</strong> — Protecting what you've
-                                        built.</span>
+                                    <i class="feather icon-feather-arrow-right-circle text-base-color icon-small me-10px"></i>
+                                    <span class="fs-18 lh-30"><strong>Stability</strong> — Protecting what you've built.</span>
                                 </li>
                             </ul>
                         </div>
@@ -626,8 +656,7 @@
                 <div class="col-xl-10 col-lg-11 text-center"
                     data-anime="{ &quot;translateY&quot;: [50, 0], &quot;opacity&quot;: [0,1], &quot;duration&quot;: 600, &quot;delay&quot;: 0, &quot;staggervalue&quot;: 150, &quot;easing&quot;: &quot;easeOutQuad&quot; }">
                     <div class="bg-white box-shadow-quadruple-large border-radius-6px p-6 lg-p-5 md-p-4 sm-p-3">
-                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px mb-2 fs-30 md-fs-26 sm-fs-24">HOW IT
-                            WORKS — THE ONE CLEAR PATH™ METHOD</h2>
+                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px mb-2 fs-30 md-fs-26 sm-fs-24">HOW IT WORKS — THE BLUE IRIS 6 STEP FRAMEWORK™</h2>
                         <p class="fs-17 lh-28 w-85 lg-w-90 md-w-100 mx-auto mb-0">A proven, structured approach to
                             understanding your numbers and improving your business.</p>
                     </div>
@@ -803,6 +832,239 @@
     </section>
 
 
+    <!-- 2. Accounting & Bookkeeping -->
+    <section id="bookkeeping" class="bg-very-light-gray">
+        <div class="container">
+            <div class="row align-items-center justify-content-center g-5">
+                <div class="col-xl-6 col-lg-6 text-center order-lg-2"
+                    data-anime="{ &quot;effect&quot;: &quot;slide&quot;, &quot;direction&quot;: &quot;rl&quot;, &quot;color&quot;: &quot;#bc8947&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 0 }">
+                    <img src="images/demo-finance-01.jpg" alt="Accounting and Bookkeeping" class="w-100 border-radius-5px animation-float">
+                </div>
+                <div class="col-xl-6 col-lg-6 order-lg-1">
+                    <span class="fs-17 d-inline-block fw-500 text-uppercase ls-1px mb-15px" style="color: #bc8947;">Service 2</span>
+                    <h2 class="alt-font fw-600 ls-minus-1px mb-15px fs-36 lg-fs-30 md-fs-28" style="color: #1C3D5A !important;">Accounting &amp; Bookkeeping</h2>
+                    <p class="fs-18 lh-30 mb-25px">Reliable bookkeeping is the foundation of every successful business. We keep your financial records accurate, organised, and up to date so you always know where your business stands.</p>
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="bg-white border-radius-5px p-4" style="box-shadow: 0 3px 15px rgba(0,0,0,0.05);">
+                                <h4 class="alt-font fw-600 fs-18 mb-10px" style="color: #bc8947 !important;">Monthly Bookkeeping</h4>
+                                <p class="fs-16 lh-26 mb-0">Accurate recording of income, expenses, supplier payments, and customer receipts to ensure your accounts stay current each month.</p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="bg-white border-radius-5px p-4" style="box-shadow: 0 3px 15px rgba(0,0,0,0.05);">
+                                <h4 class="alt-font fw-600 fs-18 mb-10px" style="color: #bc8947 !important;">Reconciliations</h4>
+                                <p class="fs-16 lh-26 mb-0">Regular reconciliation of bank accounts, credit cards, loans, and key balances to identify discrepancies early and maintain accuracy.</p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="bg-white border-radius-5px p-4" style="box-shadow: 0 3px 15px rgba(0,0,0,0.05);">
+                                <h4 class="alt-font fw-600 fs-18 mb-10px" style="color: #bc8947 !important;">Clean Month-End Close</h4>
+                                <p class="fs-16 lh-26 mb-0">Structured monthly close process to finalise accounts promptly, ensuring reliable reports and no backlog of unfinished entries.</p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="bg-white border-radius-5px p-4" style="box-shadow: 0 3px 15px rgba(0,0,0,0.05);">
+                                <h4 class="alt-font fw-600 fs-18 mb-10px" style="color: #bc8947 !important;">Accounts Organisation</h4>
+                                <p class="fs-16 lh-26 mb-0">Clear and professional organisation of your accounting records, ledgers, and documentation for easier management and future growth.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 3. Reporting & Financial Statements -->
+    <section id="reporting">
+        <div class="container">
+            <div class="row align-items-center justify-content-center g-5">
+                <div class="col-xl-6 col-lg-6 text-center"
+                    data-anime="{ &quot;effect&quot;: &quot;slide&quot;, &quot;direction&quot;: &quot;lr&quot;, &quot;color&quot;: &quot;#bc8947&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 0 }">
+                    <img src="images/demo-finance-02.jpg" alt="Reporting and Financial Statements" class="w-100 border-radius-5px animation-float">
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <span class="fs-17 d-inline-block fw-500 text-uppercase ls-1px mb-15px" style="color: #bc8947;">Service 3</span>
+                    <h2 class="alt-font fw-600 ls-minus-1px mb-15px fs-36 lg-fs-30 md-fs-28" style="color: #1C3D5A !important;">Reporting &amp; Financial Statements</h2>
+                    <p class="fs-18 lh-30 mb-25px">Strong reporting gives business owners clarity, confidence, and better decision-making. We turn raw numbers into useful financial insight.</p>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="bg-very-light-gray border-radius-5px p-4 h-100">
+                                <h4 class="alt-font fw-600 fs-17 mb-10px" style="color: #bc8947 !important;">Monthly Management Reports</h4>
+                                <p class="fs-15 lh-24 mb-0">Easy-to-understand monthly reports highlighting revenue, costs, margins, cash flow, and overall business performance.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="bg-very-light-gray border-radius-5px p-4 h-100">
+                                <h4 class="alt-font fw-600 fs-17 mb-10px" style="color: #bc8947 !important;">Profit &amp; Loss Statements</h4>
+                                <p class="fs-15 lh-24 mb-0">Clear income statements showing where profit is being made, where margins are slipping, and where action may be needed.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="bg-very-light-gray border-radius-5px p-4 h-100">
+                                <h4 class="alt-font fw-600 fs-17 mb-10px" style="color: #bc8947 !important;">Balance Sheet</h4>
+                                <p class="fs-15 lh-24 mb-0">Accurate overview of your assets, liabilities, and equity to understand the true financial strength of the business.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="bg-very-light-gray border-radius-5px p-4 h-100">
+                                <h4 class="alt-font fw-600 fs-17 mb-10px" style="color: #bc8947 !important;">Cash Flow Reporting</h4>
+                                <p class="fs-15 lh-24 mb-0">Insight into money coming in and going out, helping you manage liquidity and avoid unnecessary cash pressure.</p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="bg-very-light-gray border-radius-5px p-4">
+                                <h4 class="alt-font fw-600 fs-17 mb-10px" style="color: #bc8947 !important;">Annual Financial Statement Preparation</h4>
+                                <p class="fs-15 lh-24 mb-0">Professionally prepared year-end financial statements ready for management review, lenders, tax advisors, or auditors.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 4. Tax Coordination -->
+    <section id="tax-coordination" class="bg-very-light-gray">
+        <div class="container">
+            <div class="row align-items-center justify-content-center g-5">
+                <div class="col-xl-6 col-lg-6 text-center order-lg-2"
+                    data-anime="{ &quot;effect&quot;: &quot;slide&quot;, &quot;direction&quot;: &quot;rl&quot;, &quot;color&quot;: &quot;#bc8947&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 0 }">
+                    <img src="images/demo-finance-slider-01.jpg" alt="Tax Coordination" class="w-100 border-radius-5px animation-float">
+                </div>
+                <div class="col-xl-6 col-lg-6 order-lg-1">
+                    <span class="fs-17 d-inline-block fw-500 text-uppercase ls-1px mb-15px" style="color: #bc8947;">Service 4</span>
+                    <h2 class="alt-font fw-600 ls-minus-1px mb-15px fs-36 lg-fs-30 md-fs-28" style="color: #1C3D5A !important;">Tax Coordination</h2>
+                    <p class="fs-18 lh-30 mb-25px">We simplify tax compliance by managing the process and coordinating with trusted specialists, so deadlines are met without stress.</p>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="bg-white border-radius-5px p-4 h-100" style="box-shadow: 0 3px 15px rgba(0,0,0,0.05);">
+                                <h4 class="alt-font fw-600 fs-17 mb-10px" style="color: #bc8947 !important;">VAT Filing Coordination</h4>
+                                <p class="fs-15 lh-24 mb-0">Collection and review of required information, then coordination of timely and accurate VAT submissions.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="bg-white border-radius-5px p-4 h-100" style="box-shadow: 0 3px 15px rgba(0,0,0,0.05);">
+                                <h4 class="alt-font fw-600 fs-17 mb-10px" style="color: #bc8947 !important;">Corporate Tax Coordination</h4>
+                                <p class="fs-15 lh-24 mb-0">Support with data preparation, timelines, and communication relating to corporate tax obligations.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="bg-white border-radius-5px p-4 h-100" style="box-shadow: 0 3px 15px rgba(0,0,0,0.05);">
+                                <h4 class="alt-font fw-600 fs-17 mb-10px" style="color: #bc8947 !important;">Liaison with Trusted Tax Specialists</h4>
+                                <p class="fs-15 lh-24 mb-0">We work directly with experienced tax partners on your behalf, giving you one central point of contact.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="bg-white border-radius-5px p-4 h-100" style="box-shadow: 0 3px 15px rgba(0,0,0,0.05);">
+                                <h4 class="alt-font fw-600 fs-17 mb-10px" style="color: #bc8947 !important;">Filing Calendar Management</h4>
+                                <p class="fs-15 lh-24 mb-0">Ongoing oversight of key filing dates and deadlines to help avoid missed submissions or penalties.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 5. Audit Preparation -->
+    <section id="audit-preparation">
+        <div class="container">
+            <div class="row align-items-center justify-content-center g-5">
+                <div class="col-xl-6 col-lg-6 text-center"
+                    data-anime="{ &quot;effect&quot;: &quot;slide&quot;, &quot;direction&quot;: &quot;lr&quot;, &quot;color&quot;: &quot;#bc8947&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 0 }">
+                    <img src="images/demo-finance-slider-02.jpg" alt="Audit Preparation" class="w-100 border-radius-5px animation-float">
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <span class="fs-17 d-inline-block fw-500 text-uppercase ls-1px mb-15px" style="color: #bc8947;">Service 5</span>
+                    <h2 class="alt-font fw-600 ls-minus-1px mb-15px fs-36 lg-fs-30 md-fs-28" style="color: #1C3D5A !important;">Audit Preparation</h2>
+                    <p class="fs-18 lh-30 mb-25px">We help businesses become audit-ready by ensuring records are complete, organised, and professionally presented.</p>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="bg-very-light-gray border-radius-5px p-4 h-100">
+                                <h4 class="alt-font fw-600 fs-17 mb-10px" style="color: #bc8947 !important;">Audit-Ready Schedules</h4>
+                                <p class="fs-15 lh-24 mb-0">Preparation of supporting schedules for key balances such as receivables, payables, fixed assets, and accruals.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="bg-very-light-gray border-radius-5px p-4 h-100">
+                                <h4 class="alt-font fw-600 fs-17 mb-10px" style="color: #bc8947 !important;">Supporting Documentation</h4>
+                                <p class="fs-15 lh-24 mb-0">Organisation of invoices, contracts, reconciliations, and key records required during the audit process.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="bg-very-light-gray border-radius-5px p-4 h-100">
+                                <h4 class="alt-font fw-600 fs-17 mb-10px" style="color: #bc8947 !important;">Reconciliations</h4>
+                                <p class="fs-15 lh-24 mb-0">Completion of balance sheet reconciliations to reduce queries and improve confidence in the numbers.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="bg-very-light-gray border-radius-5px p-4 h-100">
+                                <h4 class="alt-font fw-600 fs-17 mb-10px" style="color: #bc8947 !important;">External Auditor Coordination</h4>
+                                <p class="fs-15 lh-24 mb-0">Direct communication with auditors to manage requests efficiently and reduce disruption to your team.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 6. Business Sale & Advisory -->
+    <section id="business-sale-advisory" class="bg-very-light-gray">
+        <div class="container">
+            <div class="row align-items-center justify-content-center g-5">
+                <div class="col-xl-6 col-lg-6 text-center order-lg-2"
+                    data-anime="{ &quot;effect&quot;: &quot;slide&quot;, &quot;direction&quot;: &quot;rl&quot;, &quot;color&quot;: &quot;#bc8947&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 0 }">
+                    <img src="images/demo-finance-slider-03.jpg" alt="Business Sale and Advisory" class="w-100 border-radius-5px animation-float">
+                </div>
+                <div class="col-xl-6 col-lg-6 order-lg-1">
+                    <span class="fs-17 d-inline-block fw-500 text-uppercase ls-1px mb-15px" style="color: #bc8947;">Service 6</span>
+                    <h2 class="alt-font fw-600 ls-minus-1px mb-15px fs-36 lg-fs-30 md-fs-28" style="color: #1C3D5A !important;">Business Sale &amp; Advisory</h2>
+                    <p class="fs-18 lh-30 mb-25px">Planning to buy or sell a business? We provide the financial clarity you need to make confident decisions.</p>
+                    <div class="row g-4">
+                        <div class="col-lg-12">
+                            <div class="bg-white border-radius-5px p-4" style="box-shadow: 0 3px 15px rgba(0,0,0,0.05);">
+                                <h4 class="alt-font fw-600 fs-18 mb-10px" style="color: #1C3D5A !important;">For Buyers</h4>
+                                <p class="fs-16 lh-26 mb-0">We assess how the company is truly operating — real cash flow, strengths, weaknesses, and risks — before you commit.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="bg-white border-radius-5px p-4" style="box-shadow: 0 3px 15px rgba(0,0,0,0.05);">
+                                <h4 class="alt-font fw-600 fs-18 mb-10px" style="color: #1C3D5A !important;">For Sellers</h4>
+                                <p class="fs-16 lh-26 mb-0">We help improve financial presentation, profitability, systems, and buyer appeal to support stronger valuation and a smoother sale process.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="text-center" style="background-color: #1C3D5A; padding-top: 80px; padding-bottom: 80px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-8">
+                    <h2 class="alt-font fw-600 ls-minus-1px mb-20px fs-36 md-fs-30 sm-fs-26" style="color: white !important;">Ready to build a stronger, more profitable business?</h2>
+                    <p class="fs-18 lh-30 mb-35px" style="color: rgba(255,255,255,0.85);">Book a consultation today and discover what better finance support can do for your business.</p>
+                    <a href="#"
+                        onclick="return openCalendly('https://calendly.com/ben-hogan-blueirispartners/new-meeting');"
+                        class="btn btn-medium btn-round-edge text-transform-none"
+                        style="background-color: #bc8947; color: white; border: 2px solid #bc8947; padding: 14px 35px; font-weight: 600; font-size: 16px;">
+                        Book a Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <footer class="footer-light"
         style="padding-top: 50px; padding-bottom: 50px; background-color: white; position: relative;">
         <div
@@ -822,6 +1084,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                     <p class="mb-0">&copy; Copyright 2026 <a href="index.html" target="_blank"
@@ -835,6 +1098,19 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/vendors.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script>
+        // Force all data-anime elements visible in case scroll observer doesn't fire
+        function forceAnimeVisible() {
+            document.querySelectorAll('[data-anime]').forEach(function(el) {
+                el.style.setProperty('opacity', '1', 'important');
+                Array.from(el.children).forEach(function(child) {
+                    child.style.setProperty('opacity', '1', 'important');
+                });
+            });
+        }
+        document.addEventListener('DOMContentLoaded', forceAnimeVisible);
+        setTimeout(forceAnimeVisible, 500);
+    </script>
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
     <script type="text/javascript">
         // Helper function to safely open Calendly
