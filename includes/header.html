@@ -57,9 +57,17 @@
         opacity: 1 !important;
     }
 
-    /* Full-screen mobile menu: Services dropdown layout */
-    .navbar-full-screen-menu-inner .navbar-nav {
+    /* ── Full-screen mobile menu overrides ── */
+
+    /* Stack nav items vertically, centered */
+    .navbar-full-screen-menu-inner .navbar-collapse-clone {
         display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .navbar-full-screen-menu-inner .navbar-nav {
         flex-direction: column !important;
         align-items: center !important;
         width: 100% !important;
@@ -68,48 +76,63 @@
     .navbar-full-screen-menu-inner .nav-item {
         width: 100% !important;
         text-align: center !important;
+        /* prevent Bootstrap dropdown from making this a positioning parent */
         position: static !important;
     }
 
-    /* Hide the Bootstrap caret arrow on Services toggle */
-    .navbar-full-screen-menu-inner .dropdown-toggle::after {
-        display: none !important;
-    }
-
-    /* Services toggle: look identical to other nav links */
+    /* Services toggle — look exactly like the other nav links, no rotation */
     .navbar-full-screen-menu-inner .dropdown-toggle {
         transform: none !important;
+        -webkit-transform: none !important;
         display: block !important;
         width: 100% !important;
         text-align: center !important;
         position: static !important;
     }
 
-    /* Inline dropdown: not floating, full-width, centered */
+    /* Hide Bootstrap's caret */
+    .navbar-full-screen-menu-inner .dropdown-toggle::after {
+        display: none !important;
+    }
+
+    /* Submenu: inline, not floating */
     .navbar-full-screen-menu-inner .dropdown-menu {
         position: static !important;
         float: none !important;
+        /* override any Popper inline transform */
         transform: none !important;
+        -webkit-transform: none !important;
+        inset: auto !important;
         background: transparent !important;
         border: none !important;
         box-shadow: none !important;
         width: 100% !important;
         text-align: center !important;
-        padding: 0 !important;
+        padding: 4px 0 !important;
         margin: 0 !important;
+        /* hide by default; JS adds/removes .bip-open */
+        display: none !important;
+    }
+
+    .navbar-full-screen-menu-inner .dropdown-menu.bip-open {
+        display: block !important;
+    }
+
+    .navbar-full-screen-menu-inner .dropdown-menu li {
+        padding: 4px 0 !important;
     }
 
     .navbar-full-screen-menu-inner .dropdown-menu li a {
-        color: white !important;
-        font-size: 1rem !important;
-        padding: 8px 0 !important;
+        color: rgba(255,255,255,0.85) !important;
+        font-size: 1.1rem !important;
+        padding: 4px 0 !important;
         display: block !important;
-        opacity: 0.85;
+        background: transparent !important;
     }
 
     .navbar-full-screen-menu-inner .dropdown-menu li a:hover {
-        opacity: 1;
         color: white !important;
+        background: transparent !important;
     }
 </style>
 
@@ -209,3 +232,46 @@
     </nav>
 
 </header>
+
+<script>
+(function () {
+    // Wait for the theme JS to create the full-screen menu clone, then patch it.
+    // The theme JS runs on DOMContentLoaded; we run on load (after) to ensure the clone exists.
+    function patchMobileServicesDropdown() {
+        var inner = document.querySelector('.navbar-full-screen-menu-inner');
+        if (!inner) return;
+
+        var toggle = inner.querySelector('.dropdown-toggle');
+        var menu = inner.querySelector('.dropdown-menu');
+        if (!toggle || !menu) return;
+
+        // Remove Bootstrap's dropdown data attribute so its JS won't intercept clicks
+        toggle.removeAttribute('data-bs-toggle');
+        toggle.removeAttribute('aria-expanded');
+
+        // Destroy any Bootstrap Dropdown instance on this element
+        if (window.bootstrap && window.bootstrap.Dropdown) {
+            var existing = window.bootstrap.Dropdown.getInstance(toggle);
+            if (existing) existing.dispose();
+        }
+
+        // Simple click toggle
+        toggle.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            menu.classList.toggle('bip-open');
+        });
+
+        // Clear any inline styles Popper may have already set
+        menu.removeAttribute('style');
+    }
+
+    if (document.readyState === 'loading') {
+        window.addEventListener('load', patchMobileServicesDropdown);
+    } else {
+        // Already loaded — try immediately, then retry once in case clone isn't built yet
+        patchMobileServicesDropdown();
+        setTimeout(patchMobileServicesDropdown, 500);
+    }
+})();
+</script>
